@@ -1,11 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo</title>
+    <title>Debbie's Portfolio Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Debbie Pham</h1>
+    <div class="nav-bar">
+        <img src="./images/Deb-1.jpg" alt="logo">
+        <ul class="top-bar">
+            <li class="about"><a href="#about">About</a></li>
+            <li class="project"><a href="#project">Projects</a></li>
+            <li class="contact"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <!-- Home Page -->
+    <div id="home">
+
+        <div class="home-left">
+            <img src="./images/avatar2.jpg" alt="headshot" class="headshot">
+        </div>
+        <div class="home-right">
+            <div class="home-text">
+                <h1>Debbie Pham</h1>
+                <p>Full time student at Coding Dojo | Future Software Engineer
+                    <br>
+                    Master of front end developer
+                    <br>
+                    from Lynnwood, Washington
+                </p>
+            </div>
+            <div class="intro-link">
+                <a target="_blank" rel="noopener" href="https://github.com/DebbiePham"><img
+                        src="./images/GitHub-icon.webp" alt="GitHub"></a>
+                <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/debbie-pham-8a09a850/"><img
+                        src="./images/LinkedIn-icon.png" alt="LinkedIn"></a>
+            </div>
+            <img src="./images/tools.png" alt="tools" class="tools">
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+        <img src="./images/about2.jpg" alt="about1" class="about-img1">
+        <div class="about-text">
+            <h2>Hello!</h2>
+            <p> <span class="header">A Passion for Problem-Solving and Creativity</span>
+                From a young age, I've been captivated by the limitless possibilities of technology.
+                Today, I channel that passion into crafting robust and elegant software solutions.
+                Whether it's developing efficient algorithms or designing intuitive user interfaces, I thrive on the
+                challenges that this ever-evolving field presents.
+            </p>
+            <button onclick="resume" id="resume">Resume</button>
+        </div>
+        <img src="./images/about1.jpg" alt="about2" class="about-img2">
+    </div>
+
+    <!-- project section -->
+    <div id="project">
+        <h2 class="title">My Projects</h2>
+        <div class="display">
+            <div class="card1">
+                <div class="card-content">
+                    <h3 class="project-name">Deb's Kitchen</h3>
+                    <p class="card-title"></p>
+                    <p class="card-body">about the project</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="card-content">
+                    <h3 class="project-name">Easy Plan</h3>
+                    <p class="card-title"></p>
+                    <p class="card-body">about the project</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="card-content">
+                    <h3 class="project-name">St. John Vianney Catholic Church</h3>
+                    <p class="card-title"></p>
+                    <p class="card-body">about the project</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="card4">
+                <div class="card-content">
+                    <h3 class="project-name">Get in there</h3>
+                    <p class="card-title"></p>
+                    <p class="card-body">about the project</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <a href="#home">Back to top</a>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <img src="./images/contact-img.jpg" alt="contact-img" class="contact-img">
+        <div class="contact-info">
+            <div class="contact-top">
+                <h2>Get In Touch</h2>
+                <a href="#home">Back to top</a>
+            </div>
+            <div class="contact-input">
+                <div class="input">
+                    <label for="">Full Name</label>
+                    <input type="text">
+                    <label for="">E-mail</label>
+                    <input type="text">
+                    <label for="">Message</label>
+                    <input type="text">
+                </div>
+                <div class="contact-bottom">
+                    <button id="contact-btn">Send</button>
+                    <a target="_blank" rel="noopener" href="https://github.com/DebbiePham"><img
+                        src="./images/GitHub-icon.webp" alt="GitHub"></a>
+                    <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/debbie-pham-8a09a850/"><img
+                        src="./images/LinkedIn-icon.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="end"></div>
+    <script src="script.js"></script>
 </body>
+
 </html>
